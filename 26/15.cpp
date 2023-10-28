@@ -1,7 +1,20 @@
 #include <iostream>
-#include <cmath>
 
 using namespace std;
+
+//customowa funkcja pow dajaca dokladnie taki sam efekt jak funckja pow z biblioteki cmath
+//unsigned int to po prostu modul z int czyli jesli potega by byla -3 to unsigned int potega = 3
+int pow(int baza, unsigned int potega) {
+    //podstatowy wynik
+    int wynik_p = 1;
+
+    //petla potegujaca
+    //odpala tyle razy do ktorej potegi hce sie podniesc liczbe
+    for (unsigned int i = 0; i < potega; ++i) {
+        wynik_p *= baza;
+    }
+    return wynik_p;
+}
 
 int liczba1, liczba2, wynik = 0, dziesiatki, jednosci, iteracja1 = 0, iteracja2 = 0, liczba_orginal_2, liczba_orginal_1;
 
