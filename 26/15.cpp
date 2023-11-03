@@ -1,6 +1,11 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
+
+//######
+//ten kod nie byl optymalizowany
+//######
 
 //customowa funkcja pow dajaca dokladnie taki sam efekt jak funckja pow z biblioteki cmath
 //unsigned int to po prostu modul z int czyli jesli potega by byla -3 to unsigned int potega = 3
@@ -15,16 +20,23 @@ int pow(int baza, unsigned int potega) {
     }
     return wynik_p;
 }
-
-int liczba1, liczba2, wynik = 0, dziesiatki, jednosci, iteracja1 = 0, iteracja2 = 0, liczba_orginal_2, liczba_orginal_1;
+int liczba1, liczba2, wynik = 0, dziesiatki, jednosci, iteracja1 = 0, iteracja2 = 0, liczba_orginal_2, liczba_orginal_1, ilosc_wynikow, liczba_obliczen;
 
 int main() {
     cout << "Algorytm pisemnego mnozenia\n Podaj pierwsza: ";
     cin >> liczba1;
     cout << "Podaj druga liczbe: ";
     cin >> liczba2;
-    liczba_orginal_1 = liczba1;
-    liczba_orginal_2 = liczba2;
+    liczba_orginal_2 = liczba2; //kopia liczby 1 zeby zapisac ja do podsumowania na koncu
+    liczba_orginal_1 = liczba1; //kopia liczby 2 do zapisania ile wynikow mnozenia bedzie
+    
+    int kopia_liczba1 = liczba1;
+    while (kopia_liczba1 > 0) {
+    	ilosc_wynikow++;
+    	kopia_liczba1 /= 10;
+    }
+    
+    int wyniki[ilosc_wynikow];
 
     //moduly wypisujace cyfry z liczby (skopiowane z wczesniejszyh zadan)
     while (liczba1 > 0) {
@@ -75,10 +87,27 @@ int main() {
 
         //zresetowanie iteracji1
         iteracja1 = iteracja2;
+        wyniki[liczba_obliczen] = wynik;
+        liczba_obliczen++;
+        wynik = 0;
     }
 
     //ostateczny zapis wyniku
     cout << "\n\nWynik mnozenia " << liczba_orginal_1 << " pzez " << liczba_orginal_2 << " wynosi " << wynik << "\n";
+    
+    cout << "\n\nZapis obliczen:\n";
+    
+    cout << " " << liczba_orginal_1 << "\n";
+    cout << "*" << liczba2 << "\n";
+    cout << "------------------------\n";
+    //petla wypisujaca kazdy wynik mnozenia
+    // 12 * 12
+    // wyniki[0] = 2 * 2 = 4
+    for (int i = 0; i < liczba_obliczen; i++) {
+    	cout << "+ " << wyniki[i] << "\n";
+    	wynik = wyniki[i] + wynik;
+    }
+    cout << "= " << wynik;
 
     return 0;
 }
