@@ -7,6 +7,12 @@ int liczba,cyfra,liczba_teraz = 10;
 int main() {
     cout << "Program sprawdzajacy czy ciag cyfr calkowityh jest rasnacy\n Podaj liczbe: ";
     cin >> liczba;
+    
+    //jesli liczba ma 1 cyfre to nie ma do czego porownywac wiec program sie wylacza
+    if (liczba < 10) {
+    	cout << "Liczba ma tylko jedna cyfre";
+    	return 0;
+    }
 
     //dzielenie liczby na czesci
     while (liczba > 0) {
