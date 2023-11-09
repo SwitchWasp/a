@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int liczba,cyfra,liczba_teraz = 9;
+int liczba,cyfra,liczba_teraz = 10;
 
 int main() {
     cout << "Program sprawdzajacy czy ciag cyfr calkowityh jest rasnacy\n Podaj liczbe: ";
