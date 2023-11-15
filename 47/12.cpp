@@ -19,4 +19,5 @@ int main() {
     }
 
     cout << "\nLiczba zer w reprezentacji binarnej wynosi: " << zera;
+return 0;
 }
