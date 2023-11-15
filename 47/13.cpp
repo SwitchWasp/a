@@ -2,7 +2,6 @@
 #include <string>
 
 using namespace std;
-int liczba,zera;
 string slowo;
 
 int main() {
