@@ -1,0 +1,5 @@
+te same zasady co w 2-info.txt
+input: A19F 
+
+4-b: 0.000437 ms  ->  632.49%	predkosci
+4-a: 0.002764 ms  ->  100%	predkosci

@@ -1,0 +1,14 @@
+do 2 zadania wyszly mi 3 rozwiazania wiec wzucilem wszystkie
+i pzy okazji sprawdzilem ktore jest najszybsze
+sprawdzalem biblioteka chrono
+liczony byl czas tylko zamiany z systemu 4 na system 2
+bo to jedyna czesc kodu ktora mozna zoptymalizowac
+kod odpalal 21 razy gdzie pierwszy byl wywalony bo mial ok. 10-20 razy wiekszy czas od reszty
+czas na dole to srednia tych 20 odpalen kodu
+
+wszystkie programy dostaly do wykonania 20x input "3120" (wszystkie mozliwe liczby w systemie czworkowym)
+
+tabela wynikow predkosci kodu
+2-c: 0.0000847 ms  ->  583.23% predkosci wykonania zadania
+2-b: 0.000102 ms  ->  484.31% predkosci wykonania zadania
+2-a: 0.000494 ms  ->  100% predkosci wykonania zadania
