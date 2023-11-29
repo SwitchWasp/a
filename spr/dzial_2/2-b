@@ -1,0 +1,35 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int dzien, miesiac, rok, dzienu, miesiacu, roku;
+
+cout << "Podaj dzisiejsza date\n";
+cout << "Podaj rok: ";
+cin >> rok;
+cout << "Podaj miesiac: ";
+cin >> miesiac;
+
+cout << "Podaj date urodzenia\n";
+cout << "Podaj rok: ";
+cin >> roku;
+cout << "Podaj miesiac: ";
+cin >> miesiacu;
+
+unsigned int wynik = (rok-roku) * 12;
+
+if (miesiac - miesiacu > 0) {
+	wynik = wynik + (miesiac - miesiacu);
+} else {
+	wynik = wynik + (miesiac + 12 - miesiacu);
+}
+
+if (wynik / 12 / 18 > 1) {
+	cout << "jestes pelnoletni";
+} else {
+	cout << "do pelnoletnosci brakuje ci: " << wynik / 18 << " miesiecy";
+}
+return 0;
+}
