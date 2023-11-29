@@ -9,7 +9,7 @@ int a,b;
 //nalezalo uzyc wlasnosci funkcji liniowej
 
 int main() {
-    cout << "Program sprawdzajacy rownanie liniowe ax+b = 0\n";
+    cout << "Program obliczajacy rownanie liniowe ax+b = 0\n";
 
     cout << "Podaj calkowita liczbe a: ";
     cin >> a;
