@@ -1,0 +1,136 @@
+ZADANIE 1
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+string zdanie;
+int i = 0;
+int main() {
+cout << "Program wypisujacy tylko duze litery w podanym zdaniu\nPodaj zdanie: ";
+getline(cin, zdanie);
+for(i; i < zdanie.size(); i++) {
+if (zdanie[i] >= 'A' and zdanie[i] <= 'Z') {
+cout << zdanie[i];
+}
+}
+return 0;
+}
+
+
+ZADANIE 2
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+string kolor;
+int i = 0;
+
+int main() {
+cout << "Program wypisujacy najdluzszy kolor z 5 podanyh - jesli podane wiecej to wypisuje ten podany najpozniej\nPodaj kolor: ";
+cin >> kolor;
+int dlugosc = kolor.size();
+string najdluzszy = kolor;
+
+for (i; i < 4; i++) {
+cout << "\nPodaj kolor: ";
+cin >> kolor;
+if (kolor.size() >= dlugosc) {
+dlugosc = kolor.size();
+najdluzszy = kolor;
+}
+}
+
+cout << "Kolor z najdluzsza nazwa to: " << najdluzszy;
+
+return 0;
+}
+
+
+
+ZADANIE 3
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int i = 0, dane_1, dane_2, cyfra, suma, liczba, bin1[8], bin2[8];
+
+int main() {
+cout << "Program zamieniajacy systemy\nPodaj liczbe: ";
+cin >> liczba;
+
+dane_1 = liczba;
+dane_2 = liczba;
+
+while (dane_1 > 0) {
+cyfra = dane_1 % 10;
+suma += cyfra;
+dane_1 /= 10;
+}
+
+cout << "Postac binarna podanej liczby to: ";
+while (dane_2 > 0) {
+bin2[i] = dane_2%2;
+dane_2 /= 2;
+i++;
+}
+
+i--;
+while (i >= 0) {
+cout << bin2[i];
+i--;
+}
+
+i = 0;
+cout << "\nPostac binarna sumy cyfr w podanej liczbie to: ";
+while (suma > 0) {
+bin1[i] = suma%2;
+suma /= 2;
+i++;
+}
+
+i--;
+while (i >= 0) {
+cout << bin1[i];
+i--;
+}
+
+return 0;
+}
+
+
+
+ZADANIE 4
+
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int i = 0;
+int litery[25];
+char znak;
+
+int main() {
+cout << "Program liczacy ilosc liter\n";
+string TEKST = "aaaaabccbb";
+
+for (i; i < TEKST.size(); i++) {
+if (TEKST[i] != ' ') {
+znak = tolower(TEKST[i]) - 'a';
+litery[znak] = litery[znak] + 1;
+}
+}
+
+for (i = 0; i < 25; i++) {
+znak = i + 'a';
+cout << znak << ": " << litery[i] << '\n';
+}
+
+return 0;
+}
+
