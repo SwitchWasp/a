@@ -1,0 +1,13 @@
+string zamiana_bazy(string liczba, int baza_1, int baza_2) {
+    int dane = 0;
+    string wynik = "";
+
+    dane = stoi(liczba, nullptr, baza_1);
+
+    while (dane > 0) {
+        wynik = to_string(dane % baza_2) + wynik;
+        dane /= baza_2;
+    }
+
+    return wynik;
+}
