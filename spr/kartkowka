@@ -1,0 +1,61 @@
+#include <iostream>
+
+using namespace std;
+
+int NWD(int a, int b) {
+while(b!=0){
+int pom=b;
+b=a%b;
+a=pom;
+}
+return a;
+}
+
+int main() {
+int wynik, a;
+cout << "Program liczacy NWD z n podanych liczb\n Podaj pierwsza liczbe: "; cin >> wynik;
+
+while (true) {
+cout << "\n\nWpisz '0' aby zakonczyc\nPodaj nastepna liczbe: "; cin >> a;
+if (a <= 1) {
+break;
+}
+wynik = NWD(wynik, a);
+}
+cout << "Najwiekszy wspolny dzielnik podanych liczb to: " << wynik;
+return 0;
+}
+
+
+
+
+
+#include <iostream>
+
+using namespace std;
+
+int NWW(int a, int b) {
+int c, d;
+c = a;
+d = b;
+while (true) {
+if (c == d) {
+break;
+}
+if (c < d) {
+c+=a;
+} else {
+d+=b;
+}
+}
+return d;
+}
+
+int main() {
+int male_bombki, duze_bombki;
+cout << "Program liczacy najmniejsza wspolna wielokrotnosc pudelek z bombkami\n";
+cout << "Podaj ilosc malych bombek w 1 pudelku: "; cin >> male_bombki;
+cout << "Podaj ilosc duzych bombek w 1 pudelku: "; cin >> duze_bombki;
+cout << "Tzeba uzyc "<< (NWW(male_bombki, duze_bombki))/male_bombki << " pudelek malych i \n"<< (NWW(male_bombki, duze_bombki))/duze_bombki << " duzych bombek aby bylo tyle samo";
+return 0;
+}
