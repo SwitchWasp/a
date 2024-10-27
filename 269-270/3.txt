@@ -1,0 +1,7 @@
+1. Utwórz tablicę, która będzie przechowywać wyniki dla różnych przedmiotów i pojemności plecaka.
+2. Przeglądaj każdy przedmiot z listy.
+3. Dla każdego przedmiotu sprawdzaj wszystkie możliwe pojemności plecaka, zaczynając od 0 do maksymalnej pojemności:
+	a. Jeśli przedmiot nie zmieści się w plecaku, zanotuj poprzedni wynik.
+	b. Jeśli przedmiot się zmieści, zdecyduj, czy lepiej go dodać, czy nie, wybierając większą wartość.
+4. Kontynuuj aż do przeglądnięcia wszystkich przedmiotów i pojemności.
+5. Na koniec, zwróć największą wartość, która została osiągnięta.
