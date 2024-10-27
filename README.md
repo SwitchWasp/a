@@ -1,0 +1,6 @@
+![.](https://media1.tenor.com/m/PU2DB3_qBhwAAAAC/low-tier-god.gif)
+![.](https://media.tenor.com/pbp5IGgQe4QAAAAM/low-tier-god.gif)
+![.](https://media.tenor.com/WIqvnT_7Vj8AAAAi/terry-a-davis-terry-davis.gif)
+![.](https://media1.tenor.com/m/EhYDGFf-SRUAAAAC/matura-informatyka.gif)
+![.](https://media1.tenor.com/m/dej3I6I8sr8AAAAd/terry-a-davis-terry-davis.gif)
+![.](https://media1.tenor.com/m/QsBveCxxZ1YAAAAd/templeos-terry-a-davis.gif)
